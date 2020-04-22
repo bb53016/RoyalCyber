@@ -1,0 +1,13 @@
+# This is formula to pull last N number of record for given tables in MySQL.
+
+SELECT *
+FROM table_name
+ORDER BY column_name DESC
+LIMIT n - 1, 1
+
+# Assuming Id is key unique identifier for the tables we will used it to sort out table and pull second last record with n = 1
+
+SELECT *
+FROM table_name
+ORDER BY Id DESC
+LIMIT 0, 1

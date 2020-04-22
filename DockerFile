@@ -1,0 +1,9 @@
+FROM python:3
+
+RUN mkdir /scripts
+
+WORKDIR /scripts
+
+COPY src/build-class.py /scripts/
+
+CMD [ "python", "/scripts/build-class.py" ]
